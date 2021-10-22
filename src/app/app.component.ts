@@ -15,13 +15,13 @@ export class AppComponent implements OnInit {
     minutes: number = 0;
     seconds: number = 0;
 
-    ngOnInit() {
+    ngOnInit(): void {
         this.getTimeRemaining();
         setInterval(() => this.getTimeRemaining(), 1000);
     }
 
-    getTimeRemaining() {
-        const total = Date.parse(this.VALTHO_DATE) - new Date().getTime();
+    getTimeRemaining(): void {
+        const total: number = Date.parse(this.VALTHO_DATE) - new Date().getTime();
         this.seconds = Math.floor((total / 1000) % 60);
         this.minutes = Math.floor((total / 1000 / 60) % 60);
         this.hours = Math.floor((total / (1000 * 60 * 60)) % 24);
