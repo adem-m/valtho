@@ -1,0 +1,27 @@
+.body {
+    height: calc(100vh - 40px);
+    padding-top: 40px;
+    background-image: url("https://cdn.tui.be/img/destinations/Header/frvacance-ski-france-val-thorens.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header {
+    padding: 20px;
+    font-size: 4em;
+    background-color: #6ca6c1;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.remaining {
+    border-radius: 5px;
+    background-color: #222a68;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    font-size: 3em;
+}
