@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.getTimeRemaining();
+        // setInterval executes getTimeRemaining every 1000 milliseconds
         setInterval(() => this.getTimeRemaining(), 1000);
     }
 
